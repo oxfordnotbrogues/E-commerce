@@ -1,0 +1,44 @@
+#page-header.about-header{
+    background-image: url(/black\ background\ image.png);
+    color: #fff;
+    }
+    .about-header,
+    .hero-text h2 {
+        color: #fff !important;
+    }
+    .about-header,
+    .hero-text p {
+        color: #fff !important;
+    }
+    .hero-text h2{
+        color: #fff;
+    }
+    #about-head{
+        display: flex;
+        align-items: center;
+    }
+    #about-head img{
+        width: 50%;
+        height: auto;
+    }
+    #about-head div{
+        padding-left: 30px;
+        text-align: start;
+    }
+    #about-head div p {
+        font-size: 11px;
+    }
+    #about-head div abbr{
+        font-size: 11px;
+    }
+    #about-app .video video{
+        width: 70%;
+        height: 100%;
+        margin-top: 30px;
+        border-radius: 20px;
+
+    }
+    #about-app{
+        text-align: center;
+
+    }

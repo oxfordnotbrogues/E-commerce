@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="/index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>your order</h1>
+    <table id="checkout-cart" class="shopping-cart">
+        <thead>
+            <tr>
+                <th scope="col">item</th>
+                <th scope="col">qty</th>
+                <th scope="col">price</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+                <div id="pricing">
+                    <p id="shipping">
+                        <strong>total</strong>: <span id="stotal"></span>
+                    </p>
+                    
+                </div>
+                        <div id="user-details">
+                            <h2>your data</h2>
+                            <div id="user-details-content"></div>
+                        </div>
+
+                            <form id="paypal-form" action="" method="post">
+                                <input type="hidden" name="cmd" value="_cart">
+                                <input type="hidden" name="upload" value="1">
+                                <input type="hidden" name="business" value="">
+
+                                <input type="hidden" name="currency-code" value="">
+                                <input type="submit" id="paypal-btn" class="btn" value="pay with paypal">
+                            </form>
+    
+</body>
+</html>

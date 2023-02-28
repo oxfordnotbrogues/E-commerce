@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="/index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <table id="checkout-cart" class="shopping-cart">
+        <thead>
+            <tr>
+                <th scope="col">item</th>
+                <th scope="col">qty</th>
+                <th scope="col">price</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+            <div id="pricing">
+                <p id="shipping">
+                    <strong>shipping</strong>: <span id="sshipping"></span>
+                </p>
+                    <p id="sub-total">
+                        <strong>total</strong>: <span id="stotal"></span>
+                    </p>
+            </div>
+                    <form action="order.html" method="post" id="checkout-order-form">
+                        <h2>your details</h2>
+                        <fieldset id="fieldset-billing">
+                            <legend>billing</legend>
+                            <!--name, email, address, city, zip code, country, (select box)-->
+                                <div>
+                                    <label for="name">name</label>
+                                    <input type="text" name="name" id="name" data-type="string" data-message="this field may not be empty">
+                                </div>
+                                    <div>
+                                        <label for="email">email</label>
+                                        <input type="text" name="email" id="email" data-type="expression" data-message="not a valid email address">
+                                    </div>
+                                        <div>
+                                            <label for="address">address</label>
+                                            <input type="text" name="address" id="address" data-type="string" data-message="this field may not be empty">
+                                        </div>
+                                                <div>
+                                                    <label for="zip">zip code</label>
+                                                    <input type="text" name="zip" id="zip" data-type="string" data-message="this field may not be empty">
+                                                </div>
+                                                        <div>
+                                                            <label for="country">country</label>
+                                                            <select name="country" id="country" data-type="string" data-message="this field may not be empty">
+                                                                <option value="">select</option>
+                                                                <option value="US">USA</option>
+                                                                <option value="IT">Italy</option>
+
+                                                            </select>
+                                                        </div>
+                        </fieldset>
+                                        <div id="shipping-same">same as billing<input type="checkbox" id="same-as-billing" value=""></div>
+                                            <fieldset id="fieldset-shipping">
+                                                <legend>shipping</legend>
+                                                <!--same fields as billing-->
+                                            </fieldset>
+                                                <p><input type="submit" id="submit-order" value="submit" class="btn"></p>
+
+                                        
+                    </form>
+    
+</body>
+</html>

@@ -1,0 +1,281 @@
+@media (max-width:758px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+    #navbar.active{
+        right:0px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #close {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+    }
+    #hero{
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+    #feature{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #feature .fe-box{
+        margin: 15px 15px;
+    }
+    #banner{
+        height: 30vh;
+    }
+    #newsletter {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    #newsletter .form {
+        width: 70%;
+    }
+    #product1 .pro-container {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+
+    }  
+    #product1 .pro {
+        width: 100%;
+        height:100%;
+    }
+    #product1 .pro img {
+        width: 100%;
+        height: 60%;
+    }
+    #sm-banner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    .section-p1 {
+        padding: 20px;
+    }
+    #sm-banner .banner-box {
+        height: 50vh;
+        width: 100%;
+
+    }
+    #banner3 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5em;
+        padding: 20px;
+    }
+    #banner3 .banner-box {
+        height: 45vh;
+        width: 100%;
+        padding: 0;
+
+    }
+    #newsletter .newstext h4 {
+        padding-left:0;
+    }
+    #newsletter .newstext p{
+        font-size: 15px;
+        margin-left: 0;
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /*sproduct*/
+    #prodetails {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    #prodetails .single-pro-image {
+        width: 100%;
+        margin-right:0;
+    }
+    #prodetails .single-pro-details {
+        width: 100%;
+        padding-top: 10px;
+    }
+    /*blog section*/
+    /*about*/
+    #about-head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #about-head img {
+        width: 100%;
+        height: auto;
+    }
+/*contact*/
+#form-details {
+    padding: 40px;
+}
+#form-details form {
+    width: 50%;
+}   
+}
+@media (max-width: 477px) {
+    #header{
+        padding: 10px 30px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    #hero{
+        padding: 10px;
+        background-position:55%;
+    }
+    .section-p1{
+        padding: 20px;
+    }
+    #feature {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #feature .fe-box{
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+    #product1 .pro-container {
+        display: grid;
+        row-gap: 1em;
+        grid-template-columns:1fr;
+        justify-content: space-between;
+    }
+    #product1 .pro {
+        width: 80%;
+        height: 100%;
+        left: 40px;
+    }
+    #product1 .pro img {
+        width: 100%;
+        border-radius: 20px;
+        height: 60%;
+    }
+    #banner{
+        height: 40vh;
+    }
+    #sm-banner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    #sm-banner .banner-box {
+        width: 100%;
+    }
+    #banner3 {
+        padding: 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #banner3 .banner-box {
+        min-width: 100%;
+    }
+    #newsletter{
+        padding: 40px 20px;
+    }
+    #newsletter .form {
+        width: 100%;
+    }
+
+    #newsletter .newstext h4 {
+        padding-left:0;
+    }
+    #newsletter .newstext p{
+        font-size: 15px;
+        margin-left: 0;
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /*blog section*/
+    #blog {
+        padding:0;
+    }
+    #blog .blog-box {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+        padding-bottom: 90px;
+    }
+    #blog .blog-img {
+        margin-right: 40px;
+        width: 100%;
+    }
+    #blog .blog-details {
+        width: 100%;
+    }
+    /*contact*/
+    #contact-details {
+        display: flex;
+        flex-direction: column;
+    }
+    #contact-details .details {
+        width: 100%;
+        padding: 3px;
+        margin-bottom: 30px;
+    }
+    #contact-details .map {
+        width: 100%;
+        left: 0;
+    }
+    #form-details {
+        margin: 10px;
+        padding: 30px 10px;
+        flex-wrap: wrap;
+    }
+    #form-details form {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    /*cart*/
+    #cart-add {
+        display: flex;
+        flex-direction: column;
+    }
+    #coupon {
+        width: 100%;
+    }
+    #subtotal {
+        width: 100%;
+        padding: 20px;
+    }
+}
+   
